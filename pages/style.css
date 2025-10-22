@@ -1,0 +1,318 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+body { 
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6; 
+    color: #333; }
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+a:active{
+    transform: scale(1);
+    color: white;
+}
+img{
+
+    border-radius: 12px;
+    transition: all .2s ease;
+
+}
+img:hover{
+    transform: scale(1.05);
+    box-shadow: #071415 2px 2px 5px ;
+    border-radius: 15px;
+}
+img:active{
+    transform: scale(1);
+}
+.topbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 2rem; 
+    background: #222; 
+    color: #fff; 
+    width: 100%;
+}
+.toplinks { 
+    list-style: none; 
+    display: flex; gap: 1.5rem; }
+.toplinks a {
+    color: #fff; 
+    font-weight: 500;
+    /* padding: 1.2em;
+    border: yellow solid 2px;
+    border-radius: 25px;
+    box-shadow: 2px, 2px, 5px  white ; */
+    transition: 0.1s;
+
+}
+.toplinks a.active, .toplinks a:hover {
+    color: #00bcd4;
+    font-size: 1.2rem;
+}
+
+.sec1 {
+    height: 80vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background: url("/assets/Gemini_Generated_Image_g7cum0g7cum0g7cu.png") no-repeat center center / cover fixed;
+    color: #fff; 
+    text-align: center;
+}
+.sec1box1 h1 { 
+    font-size: 70px; 
+    margin-bottom: 1rem; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0);
+    backdrop-filter: blur(1.5px);
+}
+#sec1p{
+    padding: 50px;
+    font-size: 1.3rem ;
+    text-shadow: 2px 2px 2px  #071415;
+}
+.btn {
+    display: inline-block; 
+    margin-top: 1rem; 
+    padding: 0.7rem 1.5rem;
+    background: #fff; 
+    color: #0097a7; 
+    border-radius: 25px; 
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover { 
+    background: #6cd4db; 
+    color: #fff;
+    font-size: large;
+}
+
+.sec2{
+    padding: 3rem 2rem; 
+    text-align: center;
+
+}
+.sec2 h1 { 
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+    color: #0097a7; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.sec2div {
+    height: fit-content;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem; 
+    padding: 3rem 2rem; 
+    text-align: center;
+    background: #f9f9f9; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* .sec2div:hover {
+    background-color: #00e5ff0e; */
+    /* width: 110%;
+    height: 110%;
+    z-index: 1;
+    font-size: large;
+    border-image-width: 10%; */
+
+    /* box-shadow: 2px 2px 5px #071415 ;
+    border: #00000086 solid 2px;    
+
+} */
+.sec3{
+    padding: 3rem 2rem; 
+    text-align: center;
+}
+.sec3 h1 { 
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+    color: #0097a7; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.sec3div {
+    height: fit-content;
+    gap: 1.5rem; 
+    padding: 3rem 2rem; 
+    text-align: center;
+    background: #f9f9f9; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.pac1 {
+    padding: 50px;
+    justify-content: center; 
+    align-items: center;
+    background: url("/assets/con.jpg") no-repeat top center / cover fixed ;
+    background-size: 2000px;
+    color: #fff; 
+    text-align: center;
+}
+
+.pac1box1 h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    text-align: top;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.pac2{
+    padding: 3rem 2rem; 
+    text-align: justify;
+    padding: auto;
+
+}
+.pac2 p { 
+    margin-bottom: 1rem;
+    color: #071415; 
+    padding: 40px;
+}
+#p1 { 
+    margin-bottom: 1rem;
+    color: #076772; 
+    padding: 40px;
+    font-size: large;
+}
+.pac2box1 {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    background: #f9f9f9; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.img-box{
+    border: #d2e4e5 solid 2px;
+    padding: 10px;
+    border-radius: 25px;
+    /* background-color: #00e5ff0e; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
+/* .img-box:hover {
+    background-color: #00e5ff0e; */
+    /* width: 110%;
+    height: 110%;
+    z-index: 1;
+    font-size: large;
+    border-image-width: 10%; */
+    /* padding: 20px; */
+    /* box-shadow: 2px 2px 5px #071415 ; */
+    /* border: #00000086 solid 2px; 
+    transform: scale(1.01); 
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15); 
+    border-color: #00bcd4; 
+} */
+
+
+
+.con1 {
+    padding: 50px;
+    justify-content: center; 
+    align-items: center;
+    background: url("/assets/vaccines-advice-india-img.jpg") no-repeat top center / cover fixed ;
+    background-size: 1700px;
+    color: #fff; 
+    text-align: center;
+}
+
+.con1box1 h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    text-align: top;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+.con {
+    padding: 3rem 2rem; 
+    text-align: center; 
+}
+.con-form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem; 
+    max-width: 400px; 
+    margin: auto;
+    padding:30px;
+    border: #071415 solid 2px;
+    border-radius: 25px;
+}
+.con-form input, .con-form textarea {
+    padding: 0.8rem; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    font-size: 1rem;
+}
+/* #message{
+    max-width: fit-content;
+} */
+.btn-con {
+
+    color: black;
+    display: inline-block; 
+    margin-top: 1rem; 
+    padding: 0.7rem 1.5rem;
+    background: #fff; 
+    color: #0097a7; 
+    border-radius: 25px; 
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.btn-con:hover { 
+    background: #6cd4db; 
+    color: #fff;
+    font-size: 22px;
+}
+.visual {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+footer {
+    text-align: center; 
+    padding: 1.5rem; 
+    background: #222; 
+    color: #fff; 
+    margin-top: 2rem;
+    
+}
+
+/* Add this CSS for mobile responsiveness */
+@media (max-width: 768px) {
+  /* This will stack your nav links on mobile */
+  .toplinks {
+    display: none; /* Hide them by default, you'll show them with JavaScript */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* You would add a hamburger icon and use JavaScript to show/hide .toplinks */
+
+  .sec1box1 h1 {
+    font-size: 40px; /* Reduce font size on smaller screens */
+  }
+
+  .pac2box1 {
+    /* Change the grid to a single column on mobile */
+    grid-template-columns: 1fr;
+  }
+}

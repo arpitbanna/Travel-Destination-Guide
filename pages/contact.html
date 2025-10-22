@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="topbar">
+      <div class="logo">Banna Travel</div>
+      <ul class="toplinks">
+        <li><a href="/index.html" >Home</a></li>
+        <li><a href="/pages/Packages.html">Packages</a></li>
+        <li><a href="/pages/contact.html"class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="con1">
+    <div class="con1box1">
+      <h1>Contact Us</h1>
+    </div>
+  </section>
+
+  <section class="con">
+    <form class="con-form" action="https://formspree.io/f/xldpevwr" method="POST">
+
+      <label for="name" class="visual">Your Name</label>
+      <input maxlength="40" id="name" type="text" name="name" placeholder="Your Name" required>
+      <label for="email" class="visual">Your Email</label>
+      <input id="email" type="email" name="email" placeholder="Your Email" required>
+      <label for="message" class="visual">Your Message</label>
+      <textarea minlength="10" maxlength="1000" id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-con">Send Message</button>
+      
+    </form>
+  </section>
+  
+  <footer>
+    <p>| Made with ❤️ | by Arpit Singh |</p>
+  </footer>
+</body>
+</html>
