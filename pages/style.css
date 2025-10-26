@@ -6,7 +6,9 @@
 body { 
     font-family: 'Poppins', sans-serif; 
     line-height: 1.6; 
-    color: #333; }
+    color: #333;
+    min-height: 100%;
+}
 a { 
     text-decoration: none; 
     color: inherit; 
@@ -44,10 +46,6 @@ img:active{
 .toplinks a {
     color: #fff; 
     font-weight: 500;
-    /* padding: 1.2em;
-    border: yellow solid 2px;
-    border-radius: 25px;
-    box-shadow: 2px, 2px, 5px  white ; */
     transition: 0.1s;
 
 }
@@ -105,8 +103,9 @@ img:active{
 }
 .sec2div {
     height: fit-content;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
     gap: 1.5rem; 
     padding: 3rem 2rem; 
     text-align: center;
@@ -115,18 +114,6 @@ img:active{
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-/* .sec2div:hover {
-    background-color: #00e5ff0e; */
-    /* width: 110%;
-    height: 110%;
-    z-index: 1;
-    font-size: large;
-    border-image-width: 10%; */
-
-    /* box-shadow: 2px 2px 5px #071415 ;
-    border: #00000086 solid 2px;    
-
-} */
 .sec3{
     padding: 3rem 2rem; 
     text-align: center;
@@ -147,7 +134,9 @@ img:active{
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
+.sec3>div>img{
+    height: 20rem;
+}
 .pac1 {
     padding: 50px;
     justify-content: center; 
@@ -184,8 +173,9 @@ img:active{
 }
 .pac2box1 {
     height: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 10px;
     text-align: center;
     background: #f9f9f9; 
@@ -194,29 +184,12 @@ img:active{
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .img-box{
+    max-width: 32rem;
     border: #d2e4e5 solid 2px;
     padding: 10px;
     border-radius: 25px;
-    /* background-color: #00e5ff0e; */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* .img-box:hover {
-    background-color: #00e5ff0e; */
-    /* width: 110%;
-    height: 110%;
-    z-index: 1;
-    font-size: large;
-    border-image-width: 10%; */
-    /* padding: 20px; */
-    /* box-shadow: 2px 2px 5px #071415 ; */
-    /* border: #00000086 solid 2px; 
-    transform: scale(1.01); 
-    box-shadow: 0 8px 15px rgba(0,0,0,0.15); 
-    border-color: #00bcd4; 
-} */
-
-
-
 .con1 {
     padding: 50px;
     justify-content: center; 
@@ -253,9 +226,6 @@ img:active{
     border-radius: 5px; 
     font-size: 1rem;
 }
-/* #message{
-    max-width: fit-content;
-} */
 .btn-con {
 
     color: black;
@@ -276,14 +246,14 @@ img:active{
     font-size: 22px;
 }
 .visual {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 footer {
@@ -293,26 +263,4 @@ footer {
     color: #fff; 
     margin-top: 2rem;
     
-}
-
-/* Add this CSS for mobile responsiveness */
-@media (max-width: 768px) {
-  /* This will stack your nav links on mobile */
-  .toplinks {
-    display: none; /* Hide them by default, you'll show them with JavaScript */
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* You would add a hamburger icon and use JavaScript to show/hide .toplinks */
-
-  .sec1box1 h1 {
-    font-size: 40px; /* Reduce font size on smaller screens */
-  }
-
-  .pac2box1 {
-    /* Change the grid to a single column on mobile */
-    grid-template-columns: 1fr;
-  }
 }
